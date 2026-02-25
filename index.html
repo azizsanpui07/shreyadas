@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="sd_fav.png" />
+
+    <!-- SEO Meta Tags -->
+    <title>Shreya Das | Best Psychology Teacher in Newtown, Kolkata</title>
+    <meta name="title" content="Shreya Das | Best Psychology Teacher in Newtown, Kolkata" />
+    <meta name="description"
+        content="Expert psychology tuition for Class XI & XII (ISC & CBSE) by Shreya Das, Consultant Psychologist. Best psychology teacher for home tuitions in Newtown, Kolkata." />
+    <meta name="keywords"
+        content="Psychology Teacher in Newtown, Psychology Teacher in Kolkata, Shreya Das, Psychology Tuition, Class XI Psychology, Class XII Psychology, ISC Psychology, CBSE Psychology, Consultant Psychologist, Psychological Counseling Kolkata" />
+    <meta name="author" content="Shreya Das" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shreya Das | Best Psychology Teacher in Newtown, Kolkata" />
+    <meta property="og:description"
+        content="Expert psychology tuition by Shreya Das, Consultant Psychologist in Newtown, Kolkata. Offering ISC & CBSE classes." />
+    <meta property="og:image" content="https://psychcare.in/images/shreya_das.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Shreya Das | Best Psychology Teacher in Newtown, Kolkata" />
+    <meta property="twitter:description"
+        content="Expert psychology tuition by Shreya Das, Consultant Psychologist in Newtown, Kolkata." />
+    <meta property="twitter:image" content="https://psychcare.in/images/shreya_das.jpg" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#53382D',
+                        accent: '#926A5B',
+                        sand: '#F4F2F1',
+                        muted: '#8A7E81',
+                        dark: '#110D0C',
+                        mid: '#5B5958',
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* ── Navbar ── */
+        #nav {
+            transition: background .35s, box-shadow .35s;
+        }
+
+        #nav.up {
+            background: rgba(244, 242, 241, .96);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 1px 20px rgba(83, 56, 45, .1);
+        }
+
+        #nav.up .nl {
+            color: #110D0C !important;
+        }
+
+        #nav.up .logo {
+            color: #53382D;
+        }
+
+        #nav.up #ham {
+            color: #110D0C !important;
+        }
+
+        .nav-btn {
+            background-color: #F4F2F1;
+            color: #53382D;
+        }
+
+        .nav-btn:hover {
+            background-color: #926A5B;
+            color: #F4F2F1;
+        }
+
+        #nav.up .nav-btn {
+            background-color: #53382D;
+            color: #F4F2F1;
+        }
+
+        #nav.up .nav-btn:hover {
+            background-color: #926A5B;
+        }
+
+        .nl {
+            position: relative;
+            transition: color .2s;
+        }
+
+        .nl::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #926A5B;
+            transition: width .25s;
+        }
+
+        .nl:hover::after,
+        .nl.on::after {
+            width: 100%;
+        }
+
+        .nl:hover,
+        .nl.on {
+            color: #926A5B !important;
+        }
+
+        /* ── Mobile menu ── */
+        #mob {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .35s ease;
+        }
+
+        #mob.show {
+            max-height: 400px;
+        }
+
+        /* ── Hero ── */
+        @keyframes up {
+            from {
+                opacity: 0;
+                transform: translateY(22px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        .a1 {
+            animation: up .7s .05s ease both;
+        }
+
+        .a2 {
+            animation: up .7s .20s ease both;
+        }
+
+        .a3 {
+            animation: up .7s .35s ease both;
+        }
+
+        .a4 {
+            animation: up .7s .50s ease both;
+        }
+
+        @keyframes floatY {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+
+        .float {
+            animation: floatY 4s ease-in-out infinite;
+        }
+
+        .float2 {
+            animation: floatY 5s 1s ease-in-out infinite;
+        }
+
+        /* Decorative orb glow */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+        }
+
+        /* Hero image right panel */
+        .hero-img-wrap {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* ── Cards ── */
+        .card {
+            transition: transform .25s, box-shadow .25s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 18px 36px rgba(83, 56, 45, .13);
+        }
+
+        /* ── Modal ── */
+        #modal {
+            display: none;
+        }
+
+        #modal.on {
+            display: flex;
+        }
+
+        /* ── Bounce ── */
+        @keyframes bnc {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(7px)
+            }
+        }
+
+        .bnc {
+            animation: bnc 1.8s infinite;
+        }
+
+        /* ── Toast ── */
+        #toast {
+            transition: transform .45s, opacity .45s;
+        }
+
+        /* ── Pill ── */
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            border-radius: 999px;
+            font-size: .72rem;
+            font-weight: 600;
+            letter-spacing: .04em;
+            text-transform: uppercase;
+        }
+
+        /* ── Mobile Certificate Carousel ── */
+        .cert-carousel-wrap {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .cert-track {
+            display: flex;
+            transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+            will-change: transform;
+        }
+
+        .cert-slide {
+            flex: 0 0 100%;
+            padding: 0 4px;
+            box-sizing: border-box;
+        }
+
+        .cert-dots {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin-top: 18px;
+        }
+
+        .cert-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 999px;
+            background: #926A5B;
+            opacity: 0.25;
+            transition: opacity 0.3s, width 0.3s;
+            cursor: pointer;
+            border: none;
+            padding: 0;
+        }
+
+        .cert-dot.active {
+            opacity: 1;
+            width: 22px;
+        }
+    </style>
+</head>
+
+<body class="bg-sand text-dark overflow-x-hidden">
+
+    <!-- ─────────────────────────────────────────────
+     NAVBAR
+───────────────────────────────────────────── -->
+    <nav id="nav" class="fixed inset-x-0 top-0 z-50 px-5 lg:px-14 bg-primary transition-colors">
+        <div class="max-w-6xl mx-auto flex items-center justify-between h-[68px]">
+
+            <a href="#home" class="logo font-serif text-xl font-bold text-sand transition-colors leading-none">
+                Shreya <span class="text-accent">Das</span>
+            </a>
+
+            <!-- Desktop links -->
+            <div class="hidden lg:flex items-center gap-7">
+                <a href="#home" class="nl text-sand text-sm font-medium">Home</a>
+                <a href="#classes" class="nl text-sand text-sm font-medium">Classes</a>
+                <a href="#story" class="nl text-sand text-sm font-medium">About</a>
+                <a href="#testimonials" class="nl text-sand text-sm font-medium">Reviews</a>
+                <a href="contact.html" class="nl text-sand text-sm font-medium">Contact</a>
+                <button onclick="openModal()"
+                    class="nav-btn ml-2 px-5 py-2 text-sm font-semibold rounded-full transition-colors shadow-md">
+                    Enroll Now
+                </button>
+            </div>
+
+            <!-- Hamburger -->
+            <button id="ham" onclick="toggleMenu()" class="lg:hidden text-sand text-xl" aria-label="Menu">
+                <i class="fa-solid fa-bars" id="hamico"></i>
+            </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mob" class="lg:hidden bg-sand rounded-b-2xl shadow-lg">
+            <div class="flex flex-col px-5 py-4 gap-3">
+                <a href="#home" onclick="toggleMenu()" class="text-dark font-medium text-sm hover:text-primary">Home</a>
+                <a href="#classes" onclick="toggleMenu()"
+                    class="text-dark font-medium text-sm hover:text-primary">Classes</a>
+                <a href="#story" onclick="toggleMenu()"
+                    class="text-dark font-medium text-sm hover:text-primary">About</a>
+                <a href="#testimonials" onclick="toggleMenu()"
+                    class="text-dark font-medium text-sm hover:text-primary">Reviews</a>
+                <a href="contact.html" onclick="toggleMenu()"
+                    class="text-dark font-medium text-sm hover:text-primary">Contact</a>
+                <button onclick="openModal();toggleMenu();"
+                    class="w-full py-2.5 bg-primary text-sand font-semibold rounded-full text-sm hover:bg-accent transition-colors">
+                    Enroll Now
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- ─────────────────────────────────────────────
+     HERO
+    ───────────────────────────────────────────── -->
+    <section id="home" class="relative min-h-screen overflow-hidden flex items-center">
+
+        <!-- Background image -->
+        <img src="https://images.pexels.com/photos/289737/pexels-photo-289737.jpeg" alt="Psychology background image"
+            class="absolute inset-0 w-full h-full object-cover object-center" />
+
+        <!-- Rich layered gradient overlay: deep brown on left, dark indigo on right, solid base -->
+        <div class="absolute inset-0"
+            style="background: linear-gradient(120deg, rgba(30,12,6,0.97) 0%, rgba(45,20,10,0.92) 35%, rgba(20,10,20,0.78) 65%, rgba(10,8,18,0.55) 100%);">
+        </div>
+
+        <!-- Decorative glows -->
+        <div class="orb w-96 h-96 top-0 left-0" style="background:rgba(146,106,91,0.18);"></div>
+        <div class="orb w-72 h-72 bottom-0 right-1/4" style="background:rgba(83,56,45,0.22);"></div>
+
+        <!-- Dot-grid texture overlay -->
+        <div class="absolute inset-0 opacity-[0.04]"
+            style="background-image:radial-gradient(circle,#fff 1px,transparent 1px);background-size:28px 28px;"></div>
+
+        <!-- ── CONTENT ── -->
+        <div
+            class="relative z-10 max-w-6xl mx-auto px-5 lg:px-14 py-24 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- LEFT — Text -->
+            <div>
+                <!-- Eyebrow badge -->
+                <div class="a1 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border mb-6"
+                    style="border-color:rgba(146,106,91,0.5);background:rgba(146,106,91,0.12);">
+                    <span class="w-1.5 h-1.5 rounded-full bg-accent flex-shrink-0" style="background:#926A5B;"></span>
+                    <span
+                        style="color:#c8a898;font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;">
+                        ISC &amp; CBSE &nbsp;·&nbsp; Class XI &amp; XII
+                    </span>
+                </div>
+
+                <!-- Headline with strong contrast -->
+                <h1 class="a2 font-serif font-bold text-white leading-[1.08] mb-5"
+                    style="font-size:clamp(2.4rem,5vw,3.8rem);">
+                    Psychology<br />
+                    <em style="color:#926A5B;font-style:italic;">Tuition</em>
+                    <span style="color:#F4F2F1;"> Classes</span><br />
+                    <span
+                        style="font-size:0.55em;font-weight:600;letter-spacing:.02em;color:rgba(255,255,255,0.55);font-family:Inter,sans-serif;font-style:normal;">by</span>
+                    <span style="color:#e8d5ca;"> Shreya Das</span>
+                </h1>
+
+                <!-- Sub copy -->
+                <p class="a3 mb-8 leading-relaxed"
+                    style="color:rgba(255,255,255,0.65);font-size:.95rem;max-width:420px;">
+                    Consultant Psychologist &amp; passionate educator delivering
+                    <span style="color:rgba(200,168,152,0.9);font-weight:600;">concept clarity, exam focus</span>
+                    &amp; <span style="color:rgba(200,168,152,0.9);font-weight:600;">individual attention</span> —
+                    home tuitions available in Kolkata.
+                </p>
+
+                <!-- CTA buttons -->
+                <div class="a4 flex flex-wrap gap-3">
+                    <a href="#classes" style="background:#53382D;color:#F4F2F1;"
+                        class="px-7 py-3 font-semibold rounded-full text-sm transition-all hover:opacity-90 shadow-xl flex items-center gap-2">
+                        <i class="fa-solid fa-book-open text-xs"></i> Explore Classes
+                    </a>
+                    <a href="tel:9330639334"
+                        class="px-7 py-3 font-semibold rounded-full text-sm transition-all flex items-center gap-2"
+                        style="background:rgba(255,255,255,0.08);color:#fff;border:1.5px solid rgba(255,255,255,0.22);backdrop-filter:blur(8px);"
+                        onmouseover="this.style.background='rgba(255,255,255,0.15)'"
+                        onmouseout="this.style.background='rgba(255,255,255,0.08)'">
+                        <i class="fa-solid fa-phone" style="color:#926A5B;"></i> 9330639334
+                    </a>
+                    <button onclick="openModal()" class="px-7 py-3 font-semibold rounded-full text-sm transition-all"
+                        style="background:rgba(146,106,91,0.18);color:#c8a898;border:1.5px solid rgba(146,106,91,0.35);"
+                        onmouseover="this.style.background='rgba(146,106,91,0.3)'"
+                        onmouseout="this.style.background='rgba(146,106,91,0.18)'">
+                        Book a Free Call
+                    </button>
+                </div>
+
+                <!-- Trust micro-lines -->
+                <div class="a4 flex flex-wrap gap-5 mt-8">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-graduation-cap text-xs" style="color:#926A5B;"></i>
+                        <span style="color:rgba(255,255,255,0.45);font-size:.75rem;">M.Sc Applied Psychology</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-chalkboard-user text-xs" style="color:#926A5B;"></i>
+                        <span style="color:rgba(255,255,255,0.45);font-size:.75rem;">B.Ed in Psychology</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-house text-xs" style="color:#926A5B;"></i>
+                        <span style="color:rgba(255,255,255,0.45);font-size:.75rem;">Home Tuitions · Kolkata</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT — Floating Cards -->
+            <div class="flex hero-img-wrap justify-center lg:justify-end mt-12 lg:mt-0">
+                <div class="relative w-full max-w-sm">
+
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border"
+                        style="border-color:rgba(255,255,255,0.08);">
+                        <img src="images/shreya_das.jpg" alt="Shreya Das" class="w-full h-80 object-cover" />
+                        <!-- Name strip -->
+                        <div class="px-5 py-4" style="background:rgba(20,8,4,0.85);backdrop-filter:blur(12px);">
+                            <p class="font-serif text-lg font-bold" style="color:#F4F2F1;">Shreya Das</p>
+                            <p style="color:#926A5B;font-size:.75rem;font-weight:600;">Consultant Psychologist</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating stat card 2 -->
+                    <div class="float2 absolute -bottom-5 -right-6 rounded-2xl px-4 py-3 shadow-xl"
+                        style="background:rgba(146,106,91,0.92);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.15);">
+                        <div class="flex items-center gap-2 mb-0.5">
+                            <i class="fa-solid fa-house text-white text-xs"></i>
+                            <p class="font-semibold text-white text-sm">Home Tuitions</p>
+                        </div>
+                        <p style="color:rgba(255,255,255,0.65);font-size:.7rem;">Available in Kolkata</p>
+                    </div>
+
+                    <!-- Floating review pill -->
+                    <div class="float absolute top-1/2 -right-10 -translate-y-1/2 rounded-full px-4 py-2 flex items-center gap-2 shadow-xl"
+                        style="background:rgba(244,242,241,0.96);">
+                        <div class="flex gap-0.5">
+                            <i class="fa-solid fa-star text-yellow-500 text-xs"></i>
+                            <i class="fa-solid fa-star text-yellow-500 text-xs"></i>
+                            <i class="fa-solid fa-star text-yellow-500 text-xs"></i>
+                            <i class="fa-solid fa-star text-yellow-500 text-xs"></i>
+                            <i class="fa-solid fa-star text-yellow-500 text-xs"></i>
+                        </div>
+                        <p style="color:#53382D;font-size:.7rem;font-weight:700;">5.0 Rated</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scroll cue -->
+        <div class="absolute bottom-7 left-1/2 -translate-x-1/2 bnc text-white/30 text-lg">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </section>
+
+
+
+
+    <!-- ─────────────────────────────────────────────
+     TRUST BAR
+───────────────────────────────────────────── -->
+    <div class="bg-primary py-4 px-5 lg:px-14">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-10 sm:gap-32 text-center py-2">
+            <div class="flex flex-col items-center gap-1.5">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center"
+                    style="background:rgba(244,242,241,0.1);">
+                    <i class="fa-solid fa-book-open text-accent text-sm"></i>
+                </div>
+                <p class="font-serif text-2xl font-bold text-sand leading-none">ISC &amp; CBSE</p>
+                <p class="text-sand/55 text-xs">Boards Covered</p>
+            </div>
+            <div class="flex flex-col items-center gap-1.5">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center"
+                    style="background:rgba(244,242,241,0.1);">
+                    <i class="fa-solid fa-user-graduate text-accent text-sm"></i>
+                </div>
+                <p class="font-serif text-2xl font-bold text-sand leading-none">1:1</p>
+                <p class="text-sand/55 text-xs">Individual Attention</p>
+            </div>
+            <div class="flex flex-col items-center gap-1.5">
+                <div class="w-9 h-9 rounded-full flex items-center justify-center"
+                    style="background:rgba(244,242,241,0.1);">
+                    <i class="fa-solid fa-house text-accent text-sm"></i>
+                </div>
+                <p class="font-serif text-2xl font-bold text-sand leading-none">Home</p>
+                <p class="text-sand/55 text-xs">Tuitions Available</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ─────────────────────────────────────────────
+     CLASSES
+───────────────────────────────────────────── -->
+    <section id="classes" class="py-16 px-5 lg:px-14 bg-white">
+        <div class="max-w-6xl mx-auto">
+
+            <!-- Heading -->
+            <div class="text-center mb-10" data-aos="fade-up">
+                <span class="pill bg-accent/10 text-accent mb-3">What We Offer</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark mt-2 mb-3">Our Classes</h2>
+                <p class="text-mid text-sm max-w-md mx-auto leading-relaxed">
+                    Psychology tuition for Class XI &amp; XII · Detailed syllabus · Concept clarity · Home tuitions
+                    available
+                </p>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+                <!-- Card 1 -->
+                <div class="card bg-sand rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="0">
+                    <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=500&q=80"
+                        alt="Class XI Psychology" class="w-full h-36 object-cover" />
+                    <div class="p-5">
+                        <span class="pill bg-primary/8 text-primary mb-3">Class XI</span>
+                        <h3 class="font-serif text-base font-semibold text-dark mb-1.5">Class XI Psychology</h3>
+                        <p class="text-mid text-xs leading-relaxed mb-4">
+                            Build strong foundations with clear concepts — ISC &amp; CBSE syllabus.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs text-muted mb-4">
+                            <span><i class="fa-solid fa-house text-accent"></i> Home / Online</span>
+                        </div>
+                        <a href="contact.html"
+                            class="block text-center py-2 border border-primary text-primary text-xs font-semibold rounded-full hover:bg-primary hover:text-sand transition-colors">
+                            Enquire
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card bg-sand rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="80">
+                    <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500&q=80"
+                        alt="Class XII Psychology" class="w-full h-36 object-cover" />
+                    <div class="p-5">
+                        <span class="pill bg-primary/8 text-primary mb-3">Class XII</span>
+                        <h3 class="font-serif text-base font-semibold text-dark mb-1.5">Class XII Psychology</h3>
+                        <p class="text-mid text-xs leading-relaxed mb-4">
+                            Advanced topics, board-focused guidance, and individual attention.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs text-muted mb-4">
+                            <span><i class="fa-solid fa-house text-accent"></i> Home / Online</span>
+                        </div>
+                        <a href="contact.html"
+                            class="block text-center py-2 border border-primary text-primary text-xs font-semibold rounded-full hover:bg-primary hover:text-sand transition-colors">
+                            Enquire
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card bg-sand rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="160">
+                    <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=500&q=80"
+                        alt="Exam Booster" class="w-full h-36 object-cover" />
+                    <div class="p-5">
+                        <span class="pill bg-accent/10 text-accent mb-3">Exam Prep</span>
+                        <h3 class="font-serif text-base font-semibold text-dark mb-1.5">Exam Booster</h3>
+                        <p class="text-mid text-xs leading-relaxed mb-4">
+                            Revision, past papers &amp; marking-scheme strategies for max Board marks.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs text-muted mb-4">
+                            <span><i class="fa-solid fa-laptop text-accent"></i> Online</span>
+                        </div>
+                        <a href="contact.html"
+                            class="block text-center py-2 border border-primary text-primary text-xs font-semibold rounded-full hover:bg-primary hover:text-sand transition-colors">
+                            Enquire
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card bg-primary rounded-2xl overflow-hidden" data-aos="fade-up" data-aos-delay="240">
+                    <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=500&q=80"
+                        alt="Home Tuition" class="w-full h-36 object-cover" />
+                    <div class="p-5">
+                        <span class="pill bg-sand/15 text-sand mb-3">Home Tuition</span>
+                        <h3 class="font-serif text-base font-semibold text-sand mb-1.5">Home Tuition</h3>
+                        <p class="text-sand/65 text-xs leading-relaxed mb-4">
+                            Personalised sessions at your doorstep. Available in Kolkata.
+                        </p>
+                        <div class="flex items-center gap-2 text-xs text-sand/50 mb-4">
+                            <span><i class="fa-solid fa-house text-accent"></i> Kolkata</span>
+                        </div>
+                        <button onclick="openModal()"
+                            class="w-full py-2 bg-sand text-primary text-xs font-semibold rounded-full hover:bg-accent hover:text-sand transition-colors">
+                            Book Now
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- USP row -->
+            <div class="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-start gap-3 bg-sand rounded-xl p-4">
+                    <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-primary text-xs"></i>
+                    </div>
+                    <div>
+                        <p class="text-dark font-semibold text-sm">Detailed Syllabus Coverage</p>
+                        <p class="text-mid text-xs mt-0.5">Complete ISC &amp; CBSE curriculum, chapter by chapter.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-sand rounded-xl p-4">
+                    <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-primary text-xs"></i>
+                    </div>
+                    <div>
+                        <p class="text-dark font-semibold text-sm">Concept Clarity &amp; Exam Prep</p>
+                        <p class="text-mid text-xs mt-0.5">Master every topic with real examples &amp; past papers.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3 bg-sand rounded-xl p-4">
+                    <div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-primary text-xs"></i>
+                    </div>
+                    <div>
+                        <p class="text-dark font-semibold text-sm">Individual Attention &amp; Guidance</p>
+                        <p class="text-mid text-xs mt-0.5">Personalised teaching adapted to your pace and needs.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────
+     ABOUT / STORY
+───────────────────────────────────────────── -->
+    <section id="story" class="py-16 px-5 lg:px-14 bg-sand">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+            <div class="relative" data-aos="fade-right">
+                <img src="images/shreya_das.jpg" alt="Shreya Das — Consultant Psychologist"
+                    class="w-full h-[420px] object-cover rounded-2xl shadow-xl" />
+            </div>
+
+            <!-- Text -->
+            <div data-aos="fade-left">
+                <span class="pill bg-accent/10 text-accent mb-4">About the Educator</span>
+
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark mt-2 mb-4 leading-snug">
+                    Meet <span class="italic text-accent">Shreya Das</span>
+                </h2>
+
+                <p class="text-mid text-sm leading-relaxed mb-5">
+                    I am a <strong class="text-dark">Consultant Psychologist</strong> and passionate educator making
+                    psychology accessible, relatable, and exam-ready for every student.
+                    My focus is on concept clarity, individual attention, and building real exam confidence.
+                </p>
+
+                <!-- Qualifications -->
+                <div class="space-y-2 mb-5">
+                    <div class="flex items-center gap-3 bg-white rounded-xl px-4 py-3">
+                        <i class="fa-solid fa-graduation-cap text-primary w-4"></i>
+                        <div>
+                            <p class="text-dark text-sm font-semibold">M.Sc in Applied Psychology</p>
+                            <p class="text-mid text-xs">Sister Nivedita University</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 bg-white rounded-xl px-4 py-3">
+                        <i class="fa-solid fa-chalkboard-user text-primary w-4"></i>
+                        <div>
+                            <p class="text-dark text-sm font-semibold">B.Ed in Psychology</p>
+                            <p class="text-mid text-xs">Baba Saheb Ambedkar Education University</p>
+                        </div>
+                    </div>
+                </div>
+
+                <blockquote
+                    class="border-l-3 border-accent pl-4 italic font-serif text-accent text-base leading-relaxed mb-6">
+                    "When students understand themselves, they understand the subject."
+                </blockquote>
+
+                <button onclick="openModal()"
+                    class="px-6 py-2.5 bg-primary text-sand text-sm font-semibold rounded-full hover:bg-accent transition-colors shadow-md">
+                    Enroll Now
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+     CERTIFICATES
+───────────────────────────────────────────── -->
+    <section id="certificates" class="py-16 px-5 lg:px-14 bg-white border-t border-sand/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-10" data-aos="fade-up">
+                <span class="pill bg-accent/10 text-accent mb-3">Qualifications</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark mt-2 mb-3">Credentials &amp; Certificates
+                </h2>
+                <p class="text-mid text-sm max-w-md mx-auto leading-relaxed">
+                    A commitment to academic excellence and continuous learning.
+                </p>
+            </div>
+
+            <!-- ── DESKTOP grid (md and above) ── -->
+            <div class="hidden md:grid grid-cols-3 gap-8">
+                <!-- Certificate 1 -->
+                <div class="card bg-sand rounded-2xl overflow-hidden border border-primary/5 shadow-md group border-b-4 border-b-accent/50"
+                    data-aos="fade-up" data-aos-delay="0">
+                    <div class="relative overflow-hidden aspect-[3/4] cursor-pointer bg-white flex items-center justify-center p-2 group"
+                        onclick="openCertModal('images/01.jpg')">
+                        <img src="images/01.jpg" alt="ISC Statement of Marks"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.03]" />
+                        <div
+                            class="absolute inset-0 bg-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div
+                                class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 shadow-lg">
+                                <i class="fa-solid fa-magnifying-glass-plus text-sand text-lg drop-shadow-md"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 text-center border-t border-primary/5">
+                        <h3 class="font-serif text-lg font-semibold text-dark mb-1">ISC Class XII</h3>
+                        <p class="text-mid text-xs">Council for the Indian School Certificate Examinations</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="card bg-sand rounded-2xl overflow-hidden border border-primary/5 shadow-md group border-b-4 border-b-accent/50"
+                    data-aos="fade-up" data-aos-delay="80">
+                    <div class="relative overflow-hidden aspect-[3/4] cursor-pointer bg-white flex items-center justify-center p-2 group"
+                        onclick="openCertModal('images/02.jpg')">
+                        <img src="images/02.jpg" alt="B.A. Honours in Psychology"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.03]" />
+                        <div
+                            class="absolute inset-0 bg-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div
+                                class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 shadow-lg">
+                                <i class="fa-solid fa-magnifying-glass-plus text-sand text-lg drop-shadow-md"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 text-center border-t border-primary/5">
+                        <h3 class="font-serif text-lg font-semibold text-dark mb-1">B.A. Honours Psychology</h3>
+                        <p class="text-mid text-xs">University of Calcutta</p>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="card bg-sand rounded-2xl overflow-hidden border border-primary/5 shadow-md group border-b-4 border-b-accent/50"
+                    data-aos="fade-up" data-aos-delay="160">
+                    <div class="relative overflow-hidden aspect-[3/4] cursor-pointer bg-white flex items-center justify-center p-2 group"
+                        onclick="openCertModal('images/03.jpg')">
+                        <img src="images/03.jpg" alt="M.Sc. Applied Psychology"
+                            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-[1.03]" />
+                        <div
+                            class="absolute inset-0 bg-dark/30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div
+                                class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 shadow-lg">
+                                <i class="fa-solid fa-magnifying-glass-plus text-sand text-lg drop-shadow-md"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 text-center border-t border-primary/5">
+                        <h3 class="font-serif text-lg font-semibold text-dark mb-1">M.Sc. Applied Psychology</h3>
+                        <p class="text-mid text-xs">Sister Nivedita University</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── MOBILE carousel (below md) ── -->
+            <div class="md:hidden" data-aos="fade-up">
+                <div class="cert-carousel-wrap" id="certCarousel">
+                    <div class="cert-track" id="certTrack">
+
+                        <!-- Slide 1 -->
+                        <div class="cert-slide">
+                            <div
+                                class="card bg-sand rounded-2xl overflow-hidden border border-primary/5 shadow-md border-b-4 border-b-accent/50">
+                                <div class="relative overflow-hidden aspect-[3/4] cursor-pointer bg-white flex items-center justify-center p-2"
+                                    onclick="openCertModal('images/01.jpg')">
+                                    <img src="images/01.jpg" alt="ISC Statement of Marks"
+                                        class="w-full h-full object-contain" />
+                                    <div class="absolute inset-0 bg-dark/30 flex items-center justify-center">
+                                        <div
+                                            class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 shadow-lg">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass-plus text-sand text-lg drop-shadow-md"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-5 text-center border-t border-primary/5">
+                                    <h3 class="font-serif text-lg font-semibold text-dark mb-1">ISC Class XII</h3>
+                                    <p class="text-mid text-xs">Council for the Indian School Certificate Examinations
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="cert-slide">
+                            <div
+                                class="card bg-sand rounded-2xl overflow-hidden border border-primary/5 shadow-md border-b-4 border-b-accent/50">
+                                <div class="relative overflow-hidden aspect-[3/4] cursor-pointer bg-white flex items-center justify-center p-2"
+                                    onclick="openCertModal('images/02.jpg')">
+                                    <img src="images/02.jpg" alt="B.A. Honours in Psychology"
+                                        class="w-full h-full object-contain" />
+                                    <div class="absolute inset-0 bg-dark/30 flex items-center justify-center">
+                                        <div
+                                            class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 shadow-lg">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass-plus text-sand text-lg drop-shadow-md"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-5 text-center border-t border-primary/5">
+                                    <h3 class="font-serif text-lg font-semibold text-dark mb-1">B.A. Honours Psychology
+                                    </h3>
+                                    <p class="text-mid text-xs">University of Calcutta</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="cert-slide">
+                            <div
+                                class="card bg-sand rounded-2xl overflow-hidden border border-primary/5 shadow-md border-b-4 border-b-accent/50">
+                                <div class="relative overflow-hidden aspect-[3/4] cursor-pointer bg-white flex items-center justify-center p-2"
+                                    onclick="openCertModal('images/03.jpg')">
+                                    <img src="images/03.jpg" alt="M.Sc. Applied Psychology"
+                                        class="w-full h-full object-contain" />
+                                    <div class="absolute inset-0 bg-dark/30 flex items-center justify-center">
+                                        <div
+                                            class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 shadow-lg">
+                                            <i
+                                                class="fa-solid fa-magnifying-glass-plus text-sand text-lg drop-shadow-md"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p-5 text-center border-t border-primary/5">
+                                    <h3 class="font-serif text-lg font-semibold text-dark mb-1">M.Sc. Applied Psychology
+                                    </h3>
+                                    <p class="text-mid text-xs">Sister Nivedita University</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /cert-track -->
+                </div><!-- /cert-carousel-wrap -->
+
+                <!-- Dot indicators -->
+                <div class="cert-dots" id="certDots">
+                    <button class="cert-dot active" onclick="certGoTo(0)" aria-label="Slide 1"></button>
+                    <button class="cert-dot" onclick="certGoTo(1)" aria-label="Slide 2"></button>
+                    <button class="cert-dot" onclick="certGoTo(2)" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────
+     TESTIMONIALS
+───────────────────────────────────────────── -->
+    <section id="testimonials" class="py-16 px-5 lg:px-14 bg-white">
+        <div class="max-w-5xl mx-auto">
+
+            <div class="text-center mb-10" data-aos="fade-up">
+                <span class="pill bg-accent/10 text-accent mb-3">Student Reviews</span>
+                <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark mt-2">What Students Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+
+                <!-- T1 -->
+                <div class="bg-sand border border-primary/8 rounded-2xl p-6 flex flex-col gap-3" data-aos="fade-up"
+                    data-aos-delay="0">
+                    <i class="fa-solid fa-quote-left text-2xl text-accent/30"></i>
+                    <p class="text-mid text-sm leading-relaxed flex-1">
+                        "Her classes transformed how I understand psychology. Every concept clicked — I scored 92 in my
+                        Boards!"
+                    </p>
+                    <div>
+                        <div class="flex gap-0.5 text-accent text-xs mb-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-dark text-xs font-semibold">Ananya R. — Class XII ISC</p>
+                    </div>
+                </div>
+
+                <!-- T2 -->
+                <div class="bg-sand border border-primary/8 rounded-2xl p-6 flex flex-col gap-3" data-aos="fade-up"
+                    data-aos-delay="80">
+                    <i class="fa-solid fa-quote-left text-2xl text-accent/30"></i>
+                    <p class="text-mid text-sm leading-relaxed flex-1">
+                        "The way she explains developmental theories makes it effortless to remember. Best psychology
+                        teacher I've had."
+                    </p>
+                    <div>
+                        <div class="flex gap-0.5 text-accent text-xs mb-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-dark text-xs font-semibold">Rohan M. — Class XI CBSE</p>
+                    </div>
+                </div>
+
+                <!-- T3 -->
+                <div class="bg-primary rounded-2xl p-6 flex flex-col gap-3" data-aos="fade-up" data-aos-delay="160">
+                    <i class="fa-solid fa-quote-left text-2xl text-sand/20"></i>
+                    <p class="text-sand/80 text-sm leading-relaxed flex-1">
+                        "I used to be terrified of exams. The personal session changed my mindset completely. Truly
+                        life-changing."
+                    </p>
+                    <div>
+                        <div class="flex gap-0.5 text-accent text-xs mb-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-sand text-xs font-semibold">Priya S. — Class XII CBSE</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────
+     CTA BAND
+───────────────────────────────────────────── -->
+    <section class="py-14 px-5 lg:px-14 bg-primary" data-aos="fade-up">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-serif text-3xl lg:text-4xl font-bold text-sand mb-3">
+                Ready to Begin?
+            </h2>
+            <p class="text-sand/65 text-sm mb-7 max-w-sm mx-auto">
+                Call directly or send a message — home tuitions &amp; online sessions available.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="tel:9330639334"
+                    class="px-6 py-2.5 bg-sand text-primary font-semibold rounded-full text-sm hover:bg-accent hover:text-sand transition-colors shadow-lg flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> 9330639334
+                </a>
+                <a href="contact.html"
+                    class="px-6 py-2.5 border border-sand/40 text-sand font-semibold rounded-full text-sm hover:bg-sand hover:text-primary transition-all">
+                    Send a Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ─────────────────────────────────────────────
+     FOOTER
+───────────────────────────────────────────── -->
+    <footer class="bg-dark text-sand">
+        <div class="max-w-6xl mx-auto px-5 lg:px-14 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <!-- Brand -->
+            <div class="sm:col-span-2 lg:col-span-1">
+                <p class="font-serif text-xl font-bold mb-2">Shreya <span class="text-accent">Das</span></p>
+                <p class="text-sand/50 text-xs leading-relaxed mb-4">
+                    Psychology tuition for Class XI &amp; XII (ISC &amp; CBSE) by Shreya Das, Consultant Psychologist.
+                    Kolkata.
+                </p>
+                <div class="flex gap-3">
+                    <a href="#" aria-label="Facebook"
+                        class="w-8 h-8 flex items-center justify-center rounded-full border border-sand/15 text-sand/50 hover:border-accent hover:text-accent transition-all text-xs"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"
+                        class="w-8 h-8 flex items-center justify-center rounded-full border border-sand/15 text-sand/50 hover:border-accent hover:text-accent transition-all text-xs"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"
+                        class="w-8 h-8 flex items-center justify-center rounded-full border border-sand/15 text-sand/50 hover:border-accent hover:text-accent transition-all text-xs"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="WhatsApp"
+                        class="w-8 h-8 flex items-center justify-center rounded-full border border-sand/15 text-sand/50 hover:border-accent hover:text-accent transition-all text-xs"><i
+                            class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Nav -->
+            <div>
+                <p class="text-sand/40 text-[10px] uppercase tracking-widest font-semibold mb-3">Navigation</p>
+                <ul class="space-y-2">
+                    <li><a href="#home" class="text-sand/60 text-xs hover:text-accent transition-colors">Home</a></li>
+                    <li><a href="#classes" class="text-sand/60 text-xs hover:text-accent transition-colors">Classes</a>
+                    </li>
+                    <li><a href="#story" class="text-sand/60 text-xs hover:text-accent transition-colors">About</a></li>
+                    <li><a href="#testimonials"
+                            class="text-sand/60 text-xs hover:text-accent transition-colors">Reviews</a></li>
+                    <li><a href="contact.html"
+                            class="text-sand/60 text-xs hover:text-accent transition-colors">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Classes -->
+            <div>
+                <p class="text-sand/40 text-[10px] uppercase tracking-widest font-semibold mb-3">Classes</p>
+                <ul class="space-y-2">
+                    <li><a href="#classes" class="text-sand/60 text-xs hover:text-accent transition-colors">Class XI
+                            Psychology</a></li>
+                    <li><a href="#classes" class="text-sand/60 text-xs hover:text-accent transition-colors">Class XII
+                            Psychology</a></li>
+                    <li><a href="#classes" class="text-sand/60 text-xs hover:text-accent transition-colors">Exam Booster
+                            Program</a></li>
+                    <li><a href="#classes" class="text-sand/60 text-xs hover:text-accent transition-colors">Home Tuition
+                            (Kolkata)</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <p class="text-sand/40 text-[10px] uppercase tracking-widest font-semibold mb-3">Contact</p>
+                <ul class="space-y-2.5">
+                    <li class="flex items-center gap-2 text-sand/60 text-xs">
+                        <i class="fa-solid fa-phone text-accent w-3"></i>
+                        <a href="tel:9330639334" class="hover:text-accent transition-colors">9330639334</a>
+                    </li>
+                    <li class="flex items-center gap-2 text-sand/60 text-xs">
+                        <i class="fa-solid fa-envelope text-accent w-3"></i>
+                        <span>shreyadasdas34@gmail.com</span>
+                    </li>
+                    <li class="flex items-center gap-2 text-sand/60 text-xs">
+                        <i class="fa-solid fa-location-dot text-accent w-3"></i>
+                        <span>Kolkata, West Bengal</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="border-t border-sand/8">
+            <div
+                class="max-w-6xl mx-auto px-5 lg:px-14 py-4 flex flex-col sm:flex-row items-center justify-between gap-1">
+                <p class="text-sand/30 text-[11px]">© 2026 PsychCare · Shreya Das. All rights reserved.</p>
+                <p class="text-sand/30 text-[11px]">Developed By <a href="https://srdigitalleads.io" target="_blank"
+                        class="hover:text-accent transition-colors">SR Digital Leads</a></p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ─────────────────────────────────────────────
+     MODAL — ENROLL NOW
+───────────────────────────────────────────── -->
+    <div id="modal" class="fixed inset-0 z-[999] items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md overflow-hidden">
+
+            <!-- Header -->
+            <div class="bg-primary px-6 py-5 flex items-center justify-between">
+                <div>
+                    <h3 class="font-serif text-xl font-bold text-sand">Enroll Now</h3>
+                    <p class="text-sand/55 text-xs mt-0.5">We'll reply within 24 hours.</p>
+                </div>
+                <button onclick="closeModal()" aria-label="Close"
+                    class="w-8 h-8 flex items-center justify-center rounded-full bg-sand/10 text-sand hover:bg-sand hover:text-primary transition-all">
+                    <i class="fa-solid fa-xmark text-sm"></i>
+                </button>
+            </div>
+
+            <!-- Body -->
+            <form id="bform" onsubmit="doBook(event)" class="px-6 py-5 flex flex-col gap-4">
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-[10px] font-semibold text-mid uppercase tracking-wide mb-1"
+                            for="m-name">Full Name</label>
+                        <input id="m-name" type="text" required placeholder="Your name"
+                            class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm text-dark focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-sand/30" />
+                    </div>
+                    <div>
+                        <label class="block text-[10px] font-semibold text-mid uppercase tracking-wide mb-1"
+                            for="m-phone">Phone</label>
+                        <input id="m-phone" type="tel" required placeholder="+91 XXXXX"
+                            class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm text-dark focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-sand/30" />
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-semibold text-mid uppercase tracking-wide mb-1"
+                        for="m-email">Email</label>
+                    <input id="m-email" type="email" required placeholder="you@example.com"
+                        class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm text-dark focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-sand/30" />
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-semibold text-mid uppercase tracking-wide mb-1"
+                        for="m-class">Select Class</label>
+                    <select id="m-class" required
+                        class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm text-dark focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all bg-white">
+                        <option value="" disabled selected>Choose…</option>
+                        <option>Class XI Psychology (ISC)</option>
+                        <option>Class XI Psychology (CBSE)</option>
+                        <option>Class XII Psychology (ISC)</option>
+                        <option>Class XII Psychology (CBSE)</option>
+                        <option>Exam Booster Program</option>
+                        <option>Home Tuition (Kolkata)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-[10px] font-semibold text-mid uppercase tracking-wide mb-1"
+                        for="m-msg">Message (optional)</label>
+                    <textarea id="m-msg" rows="2" placeholder="Any specific topic or requirement…"
+                        class="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-sm text-dark focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all resize-none bg-sand/30"></textarea>
+                </div>
+
+                <button type="submit"
+                    class="w-full py-3 bg-primary text-sand font-semibold rounded-full text-sm hover:bg-accent transition-colors shadow-md">
+                    Submit Request
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- ─────────────────────────────────────────────
+     CERTIFICATE MODAL
+───────────────────────────────────────────── -->
+    <div id="certModal"
+        class="fixed inset-0 z-[1000] bg-dark/95 hidden items-center justify-center p-5 opacity-0 transition-opacity duration-300"
+        onclick="if(event.target===this)closeCertModal()">
+        <button onclick="closeCertModal()" aria-label="Close"
+            class="absolute top-6 right-6 w-10 h-10 flex items-center justify-center rounded-full bg-sand/10 text-sand hover:bg-sand hover:text-primary transition-all z-[1010]">
+            <i class="fa-solid fa-xmark text-lg"></i>
+        </button>
+        <img id="certModalImg" src="" alt="Certificate View"
+            class="max-w-full max-h-[90vh] rounded-lg shadow-[0_0_50px_rgba(0,0,0,0.6)] scale-95 transition-transform duration-300 object-contain" />
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" style="transform:translateY(80px);opacity:0;"
+        class="fixed bottom-5 right-5 z-[1000] bg-primary text-sand px-5 py-3 rounded-xl shadow-xl flex items-center gap-2.5 text-sm font-medium">
+        <i class="fa-solid fa-circle-check text-accent"></i>
+        Booking request sent! We'll be in touch soon.
+    </div>
+
+
+    <!-- ─────────────────────────────────────────────
+     SCRIPTS
+───────────────────────────────────────────── -->
+    <script>
+        AOS.init({ duration: 600, once: true, offset: 50 });
+
+        // Navbar
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('up', window.scrollY > 36);
+        });
+
+        // Mobile menu
+        const mob = document.getElementById('mob');
+        const hamico = document.getElementById('hamico');
+        let open = false;
+        function toggleMenu() {
+            open = !open;
+            mob.classList.toggle('show', open);
+            hamico.className = open ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+        }
+
+        // Modal Book
+        const modal = document.getElementById('modal');
+        function openModal() { modal.classList.add('on'); document.body.style.overflow = 'hidden'; }
+        function closeModal() { modal.classList.remove('on'); document.body.style.overflow = ''; }
+        modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+
+        // Certificate Modal
+        const certModal = document.getElementById('certModal');
+        const certModalImg = document.getElementById('certModalImg');
+
+        function openCertModal(src) {
+            certModalImg.src = src;
+            certModal.classList.remove('hidden');
+            certModal.classList.add('flex');
+
+            // tiny delay to ensure display:flex is painted before opacity transition
+            setTimeout(() => {
+                certModal.classList.remove('opacity-0');
+                certModalImg.classList.remove('scale-95');
+                certModalImg.classList.add('scale-100');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeCertModal() {
+            certModal.classList.add('opacity-0');
+            certModalImg.classList.remove('scale-100');
+            certModalImg.classList.add('scale-95');
+
+            setTimeout(() => {
+                certModal.classList.remove('flex');
+                certModal.classList.add('hidden');
+                certModalImg.src = '';
+            }, 300); // matches duration-300
+
+            if (!modal.classList.contains('on')) {
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Global keydown listeners for escape
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape') {
+                if (modal.classList.contains('on')) closeModal();
+                if (!certModal.classList.contains('hidden')) closeCertModal();
+            }
+        });
+
+        // Form
+        function doBook(e) {
+            e.preventDefault();
+            closeModal();
+            document.getElementById('bform').reset();
+            const t = document.getElementById('toast');
+            t.style.transform = 'translateY(0)';
+            t.style.opacity = '1';
+            setTimeout(() => { t.style.transform = 'translateY(80px)'; t.style.opacity = '0'; }, 4000);
+        }
+
+        // ── Certificate Carousel (mobile) ──
+        (function () {
+            const track = document.getElementById('certTrack');
+            const dots = document.querySelectorAll('#certDots .cert-dot');
+            if (!track) return;
+
+            const total = 3;
+            let current = 0;
+            let autoTimer = null;
+
+            function certGoTo(idx) {
+                current = (idx + total) % total;
+                track.style.transform = 'translateX(-' + (current * 100) + '%)';
+                dots.forEach((d, i) => d.classList.toggle('active', i === current));
+            }
+
+            // expose globally for dot onclick
+            window.certGoTo = certGoTo;
+
+            function startAuto() {
+                stopAuto();
+                autoTimer = setInterval(() => certGoTo(current + 1), 3000);
+            }
+            function stopAuto() {
+                clearInterval(autoTimer);
+            }
+
+            startAuto();
+
+            // Touch / swipe support
+            let touchStartX = 0;
+            const carousel = document.getElementById('certCarousel');
+            carousel.addEventListener('touchstart', e => {
+                touchStartX = e.changedTouches[0].clientX;
+                stopAuto();
+            }, { passive: true });
+            carousel.addEventListener('touchend', e => {
+                const diff = touchStartX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 40) certGoTo(current + (diff > 0 ? 1 : -1));
+                startAuto();
+            }, { passive: true });
+        })();
+    </script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919330639334" target="_blank" aria-label="Chat on WhatsApp"
+        class="fixed bottom-[25vh] right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-[0_4px_16px_rgba(37,211,102,0.4)] hover:-translate-y-1.5 hover:shadow-[0_8px_24px_rgba(37,211,102,0.5)] transition-all duration-300 group">
+        <i class="fa-brands fa-whatsapp text-[32px]"></i>
+        <div
+            class="absolute right-[70px] bg-white text-dark text-xs font-bold px-3 py-2 rounded-xl shadow-xl opacity-0 translate-x-3 pointer-events-none group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 whitespace-nowrap flex items-center gap-1.5">
+            <span class="relative flex h-2 w-2">
+                <span
+                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-[#25D366]"></span>
+            </span>
+            Chat with us
+            <div class="absolute top-1/2 -translate-y-1/2 -right-1 w-3 h-3 bg-white rotate-45 rounded-sm -z-10"></div>
+        </div>
+    </a>
+
+</body>
+
+</html>
